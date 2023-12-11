@@ -16,7 +16,7 @@ const ExperienceCard = ({ experience }) => (
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
-      <div className="flex justify-center items-center w-full h-full">
+      <div data-aos="fade-right" className="flex justify-center items-center w-full h-full">
         <img
           src={experience.icon}
           alt={experience.compnany_name}
@@ -25,7 +25,7 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }
   >
-    <div>
+    <div data-aos="fade-left"  >
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
       <p
         className="text-secondary text-[16px] font-semibold"
@@ -34,7 +34,7 @@ const ExperienceCard = ({ experience }) => (
         {experience.compnany_name}
       </p>
     </div>
-    <ul className="mt-5 list-disc ml-5 space-y-2">
+    <ul data-aos="fade-down" className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
@@ -52,10 +52,11 @@ const Experience = () => {
     <>
       <motion.dev variants={textVariant}>
         <p className={styles.sectionSubText}>What I have skilled so far</p>
-        <h2 className={styles.sectionHeadText}>Skilled in.</h2>
+        <h2 data-aos="fade-right" className={styles.sectionHeadText}>Skilled in.</h2>
       </motion.dev>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
+
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

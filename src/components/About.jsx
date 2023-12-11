@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
       >
-        Hello there, I am AdnanHassan Bhuia a skilled full-stack web
+        Hello there, I am Adnan al emran a skilled full-stack web
         developer with expertise in HTML, CSS, JavaScript, MongoDB and
         frameworks like React, Node.js and Tailwind. I excel at collaborating
         closely with clients to create efficient, scalable, and user-friendly

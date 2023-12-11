@@ -87,11 +87,14 @@ const Works = () => {
   return (
     <>
       <motion.dev variants={textVariant}>
-        <p className={styles.sectionSubText}>My Projects</p>
+        <div data-aos="fade-right" className="">
+             <p className={styles.sectionSubText}>My Projects</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
+        </div>
+     
       </motion.dev>
 
-      <div className="w-full flex">
+      <div  data-aos="fade-up" className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"

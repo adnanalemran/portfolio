@@ -81,6 +81,7 @@ const Hero = () => {
           </div>
 
           <img
+          data-aos="fade-up"
             className="max-w-[250px] md:max-w-[300px] lg:max-w-[576px]"
             src={profilePicture}
           />
