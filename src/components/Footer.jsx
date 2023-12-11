@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
           <div className="flex flex-col">
             <p className="text-lg font-bold mb-3">Location</p>
-            <p className="text-base mb-2">Ikra Villa, Monir Chemical Road</p>
-            <p className="text-base mb-2">Opposite of DUET Campus</p>
-            <p className="text-base mb-2">Gazipur Sadar, Gazipur</p>
+ 
+            <p className="text-base mb-2">Side of Halimfoundation Model High School</p>
+            <p className="text-base mb-2">Taltola, Agargaon, Dhaka</p>
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
