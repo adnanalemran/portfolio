@@ -41,8 +41,9 @@ const Hero = () => {
 
         <div className="flex-none lg:flex">
           <div>
-            <div className="md:flex">
+            <div  data-aos="fade-right" className="md:flex">
               <h1
+             
                 className={`md:${styles.heroHeadText} text-[22px] text-white`}
               >
                 Hi, I'm
@@ -56,6 +57,7 @@ const Hero = () => {
               </p>
             </div>
             <p
+            data-aos="fade-up-right"
               className={`md:${styles.heroSubText} text-base mt-2 text-white-100 md:flex`}
             >
               <h1>
@@ -67,7 +69,7 @@ const Hero = () => {
               </h1>
               <h1> Web apps</h1>
             </p>
-            <div className="mt-6 md:mt-12 md:ms-12">
+            <div  data-aos="fade-down-right" className="mt-6 md:mt-12 md:ms-12">
               <a
                 onClick={downloadResume}
                 href="https://drive.google.com/uc?export=download&id=1gbxExsH802CBWCC_UQ1jExqQiaovVq_v"

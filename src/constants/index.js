@@ -233,9 +233,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "TuneTutor",
+    name: "Tech Spot",
     description:
-      "It's a music instrument learning website where students can learn to play musical instruments during their summer break. It has separate dashboard for students, instructors and admin. TuneTutors is a interactive and responsive website .",
+      "Tech Spot is a dynamic React website dedicated to all things technology and electronics. This platform is designed to provide an engaging and interactive experience for tech enthusiasts, offering a wide range of features and functionalities.",
     tags: [
       {
         name: "react",
@@ -251,14 +251,14 @@ const projects = [
       },
     ],
     image: tuneTutore,
-    source_code_link: "https://github.com/adnanalemran/TuneTutors",
-    demo_link: "https://tunetutors-bd41b.web.app/",
-    server_link: "https://github.com/adnanalemran/TuneTutors-Server",
+    source_code_link: "https://github.com/adnanalemran/tech-spot-ClientSite",
+    demo_link: "https://tech-spot-f78f5.web.app/",
+    server_link: "https://github.com/adnanalemran/tech-spot-Server-site",
   },
   {
-    name: "Kitchen Secret",
+    name: "Fresh Taste",
     description:
-      "It's a Chefs booking website . Visitor can hire chefs from here for any kind of events. Visitor can explore different types of recipe from expert chefs. In there I was use MongoDB cloud store, Firebase for authentication and DaisyUI for design.",
+      "Fresh Taste, the ultimate solution for restaurant management. With a wide range of features, it's the perfect choice for restaurateurs looking to streamline their operations and offer a delightful experience to their customers.",
     tags: [
       {
         name: "react",
@@ -274,17 +274,17 @@ const projects = [
       },
     ],
     image: kitchen,
-    source_code_link: "https://github.com/adnanalemran/kitchen-secret",
-    demo_link: "https://asignment10-auth.web.app/",
-    server_link: "https://github.com/adnanalemran/kitchen-secret-server",
+    source_code_link: "https://github.com/adnanalemran/fresh-taste-Client-Site",
+    demo_link: "https://fresh-taste.web.app/",
+    server_link: "https://github.com/adnanalemran/fresh-taste-Server-site",
   },
   {
-    name: "The Toy Lab",
+    name: "ContestHub",
     description:
-      "It's a toy selling website . The website was made for online shopping. People can buy educational toy from there . I use HTML, CSS, Tailwind , Firebases, ReactJS, MongoDB, Express, JWT and some technology to build this website .",
+      "ContestHub ultimate platform where innovation meets recognition! ContestHub is a dynamic and user-friendly Project Contest Creation Platform designed to foster creativity, engage communities, and celebrate talent across various domains",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
@@ -298,9 +298,9 @@ const projects = [
     ],
     image: toylab,
 
-    source_code_link: "https://github.com/adnanalemran/The-Toy-Lab",
-    demo_link: "https://the-toy-lab.web.app/",
-    server_link: "https://github.com/adnanalemran/The-Toy-Lab-Server",
+    source_code_link: "https://github.com/adnanalemran/contesthub-Client-Site",
+    demo_link: "https://contesthub-adnan.web.app/",
+    server_link: "https://github.com/adnanalemran/tech-spot-Server-site",
   },
 ];
 
