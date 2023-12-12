@@ -1,4 +1,3 @@
-
 import Swal from "sweetalert2";
 import { styles } from "../style";
 import "./Hero.css";
@@ -30,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto  `}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -41,9 +40,8 @@ const Hero = () => {
 
         <div className="flex-none lg:flex">
           <div>
-            <div  data-aos="fade-right" className="md:flex">
+            <div data-aos="fade-right" className="md:flex">
               <h1
-             
                 className={`md:${styles.heroHeadText} text-[22px] text-white`}
               >
                 Hi, I'm
@@ -57,7 +55,7 @@ const Hero = () => {
               </p>
             </div>
             <p
-            data-aos="fade-up-right"
+              data-aos="fade-up-right"
               className={`md:${styles.heroSubText} text-base mt-2 text-white-100 md:flex`}
             >
               <h1>
@@ -69,10 +67,10 @@ const Hero = () => {
               </h1>
               <h1> Web apps</h1>
             </p>
-            <div  data-aos="fade-down-right" className="mt-6 md:mt-12 md:ms-12">
+            <div data-aos="fade-down-right" className="mt-6 md:mt-12 md:ms-12">
               <a
                 onClick={downloadResume}
-                href="https://drive.google.com/uc?export=download&id=1gbxExsH802CBWCC_UQ1jExqQiaovVq_v"
+                href="https://drive.google.com/uc?export=download&id=1lBwkHEUo52Cs7HCMhN8fHUp8xsVyNNcC"
                 className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
               >
                 Download Resume
@@ -81,8 +79,7 @@ const Hero = () => {
           </div>
 
           <img
-          data-aos="fade-up"
-            className="max-w-[250px] md:max-w-[300px] lg:max-w-[576px]"
+            className="max-w-[250px] md:max-w-[300px] lg:max-w-[576px] lg:mt-12    "
             src={profilePicture}
           />
         </div>

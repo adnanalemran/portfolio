@@ -13,9 +13,39 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const handleSubmit = (e) => {};
+  const sendEmail = () => {
+    setLoading(true);
+  
+    // Construct the email body
+    const emailBody = `
+      Name: ${form.name}
+      Email: ${form.email}
+      Message: ${form.message}
+    `;
+  
+    // Construct the mailto link
+    const mailtoLink = `mailto:adnanalemran@hotmail.com?subject=New Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+  
+    // Open the default email client
+    window.location.href = mailtoLink;
+  
+    setLoading(false);
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Add any form validation logic here before sending the email
+
+    await sendEmail();
+  };
 
   return (
     <div className="xl-mt-12 xl-flex-row flex-col-reverse flex gap-10 overflow-hidden">

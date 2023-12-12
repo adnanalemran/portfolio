@@ -75,7 +75,8 @@ const Navbar = () => {
 
         <a
           onClick={downloadResume}
-          href="https://drive.google.com/uc?export=download&id=1gbxExsH802CBWCC_UQ1jExqQiaovVq_v"
+          href="https://drive.google.com/uc?export=download&id=1lBwkHEUo52Cs7HCMhN8fHUp8xsVyNNcC"
+           
        
           className="text-white text-[20px] lg:ml ml-5"
         >
