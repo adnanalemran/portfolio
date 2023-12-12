@@ -15,8 +15,8 @@ import Footer from "./components/Footer";
 import SocialLinks from "./components/SocialLinks";
 const App = () => {
   return (
-    <BrowserRouter className="">
-      <div className="relative z-0 bg-primary  ">
+    <BrowserRouter className=" bg-primary">
+      <div className="relative z-0 bg-primary  container mx-auto overflow-hidden w-full  ">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center container mx-auto overflow-hidden w-full">
           <Navbar></Navbar>
           <Hero className=" w-full "></Hero>
