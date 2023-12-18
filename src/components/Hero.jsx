@@ -70,7 +70,7 @@ const Hero = () => {
             <div data-aos="fade-down-right" className="mt-6 md:mt-12 md:ms-12">
               <a
                 onClick={downloadResume}
-                href="https://drive.google.com/uc?export=download&id=1lBwkHEUo52Cs7HCMhN8fHUp8xsVyNNcC"
+                href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX"
                 className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
               >
                 Download Resume

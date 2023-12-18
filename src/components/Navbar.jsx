@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { styles } from "../style";
+import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { styles } from "../style";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -75,7 +75,7 @@ const Navbar = () => {
 
         <a
           onClick={downloadResume}
-          href="https://drive.google.com/uc?export=download&id=1lBwkHEUo52Cs7HCMhN8fHUp8xsVyNNcC"
+          href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX"
            
        
           className="text-white text-[20px] lg:ml ml-5"
