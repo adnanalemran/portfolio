@@ -34,6 +34,7 @@ import express from "./company/express.png";
 import tbootstrap from "./company/tbootstrap.png";
 
 import toylab from "./toylab.jpg";
+import ExpoElite from "./ExpoElite.jfif";
 import tuneTutore from "./tuneTutors.jpg";
 import kitchen from "./kitchen.jpg";
 
@@ -72,4 +73,5 @@ export {
   toylab,
   tuneTutore,
   kitchen,
+  ExpoElite,
 };
