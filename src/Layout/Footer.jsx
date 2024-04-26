@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,10 +11,11 @@ const Footer = () => {
               <img src="src/assets/images/logo.svg" alt="Logo" />
             </a>
             <ul className="footer-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="works.html">Works</a></li>
-              <li><a href="contact.html">Contact</a></li>
+            <NavLink  to="/" style={{ color: "#676767" }} activeClassName="active" className="navlink">Home</NavLink>
+                <NavLink to="/about" style={{ color: "#676767" }} activeClassName="active" className="navlink">About</NavLink>
+                <NavLink to="/works" style={{ color: "#676767" }} activeClassName="active" className="navlink">Works</NavLink>
+                <NavLink to="/blog" style={{ color: "#676767" }} activeClassName="active" className="navlink">Blog</NavLink>
+                <NavLink to="/contact" style={{ color: "#676767" }} activeClassName="active" className="navlink">Contact</NavLink>
             </ul>
             <p className="copyright">
               &copy; All rights reserved by <span>Adnan al-emran </span>
