@@ -12,17 +12,19 @@ const Header = () => {
             </a>
 
             <nav className="navbar">
-              <ul className="menu" >
-                <a to="/">Home</a>
-                <NavLink> <span> About</span></NavLink>
-                <a> Works</a>
-                <NavLink> Contact</NavLink>
+              <ul className="menu">
+                <NavLink  to="/" style={{ color: "#676767" }} activeClassName="active" className="navlink">Home</NavLink>
+                <NavLink to="/about" style={{ color: "#676767" }} activeClassName="active" className="navlink">About</NavLink>
+                <NavLink to="/works" style={{ color: "#676767" }} activeClassName="active" className="navlink">Works</NavLink>
+                <NavLink to="/contact" style={{ color: "#676767" }} activeClassName="active" className="navlink">Contact</NavLink>
               </ul>
-              <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn"> Adnan's Resume</a>
+
+
+              <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn"> Adnans Resume</a>
 
             </nav>
 
-            <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn">Adnan's Resume</a>
+            <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn">Adnans Resume</a>
 
             <div className="show-menu">
               <span></span>

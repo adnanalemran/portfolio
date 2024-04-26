@@ -1,2 +1,12 @@
+.active {
+  color: white !important;
+}
 
-  
+.navlink {
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: white !important;
+}
