@@ -7,7 +7,7 @@ const Header = () => {
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <a href="index.html" className="logo">
-            <img src="src/assets/images/logo.svg" alt="Logo" />
+              <img src="src/assets/images/logo.svg" alt="Logo" />
             </a>
 
             <nav className="navbar">
@@ -17,10 +17,11 @@ const Header = () => {
                 <li><a href="works.html">Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-              <a href="contact.html" className="theme-btn">Let's talk</a>
+              <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn"> Adnan's Resume</a>
+
             </nav>
 
-            <a href="contact.html" className="theme-btn">Let's talk</a>
+            <a href="https://drive.google.com/uc?export=download&id=1ZjH1AVuZyZTlwpvipjpTUCyOu0oBGjJX" className="theme-btn">Adnan's Resume</a>
 
             <div className="show-menu">
               <span></span>

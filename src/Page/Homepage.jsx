@@ -48,31 +48,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="gx-row d-flex gap-24">
-                  <div data-aos="zoom-in">
-                    <div
-                      className="about-crenditials-box info-box shadow-box h-full"
-                    >
-                      <a className="overlay-link" href="credentials.html"></a>
-                      <img
-                        src="src/assets/images/bg1.png"
-                        alt="BG"
-                        className="bg-img"
-                      />
-                      <img src="src/assets/images/sign.png" alt="Sign" />
-                      <div
-                        className="d-flex align-items-center justify-content-between"
-                      >
-                        <div className="infos">
-                          <h4>more about me</h4>
-                          <h1>Credentials</h1>
-                        </div>
-
-                        <a href="credentials.html" className="about-btn">
-                          <img src="src/assets/images/icon.svg" alt="Button" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+               
 
                   <div data-aos="zoom-in">
                     <div className="about-project-box info-box shadow-box h-full">
@@ -92,6 +68,32 @@ const Homepage = () => {
                         </div>
 
                         <a href="#" className="about-btn">
+                          <img src="src/assets/images/icon.svg" alt="Button" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                     <div data-aos="zoom-in">
+                    <div
+                      className="about-crenditials-box info-box shadow-box h-full"
+                    >
+                      <a className="overlay-link" href="credentials.html"></a>
+                      <img
+                        src="src/assets/images/bg1.png"
+                        alt="BG"
+                        className="bg-img"
+                      />
+                      <img src="src/assets/images/sign.png" alt="Sign" />
+                      <div
+                        className="d-flex align-items-center justify-content-between"
+                      >
+                        <div className="infos">
+                          <h4>more about me</h4>
+                          <h1>Credentials</h1>
+                        </div>
+
+                        <a href="credentials.html" className="about-btn">
                           <img src="src/assets/images/icon.svg" alt="Button" />
                         </a>
                       </div>
