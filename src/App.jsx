@@ -1,40 +1,35 @@
-import { BrowserRouter } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Works,
-  Navbar,
-  Tech,
-} from "./components";
-import Footer from "./components/Footer";
-import SocialLinks from "./components/SocialLinks";
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <BrowserRouter className=" bg-primary">
-      <div className="relative z-0 bg-primary  container mx-auto overflow-hidden w-full  ">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center container mx-auto overflow-hidden w-full">
-          <Navbar></Navbar>
-          <Hero className=" w-full "></Hero>
-        </div>
-
-        <About ></About>
-        <Experience ></Experience>
-        <Tech></Tech>
-        <Works></Works>
-        <Feedbacks></Feedbacks>
-        <div className="relative z-0">
-          <Contact></Contact>
-        </div>
-        <Footer></Footer>
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-      <SocialLinks />
-    </BrowserRouter>
-  );
-};
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
 
-export default App;
+export default App
