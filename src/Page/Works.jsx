@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Works = () => {
@@ -14,7 +15,7 @@ const Works = () => {
                                 <div className="row gap-20  ">
                                     <div data-aos="zoom-in" className="col-md-4">
                                         <div className="project-item shadow-box">
-                                            <a className="overlay-link" href="work-details.html"></a>
+                                            <Link className="overlay-link"  to="/work-details"></Link>
                                             <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                                             <div className="project-img">
                                                 <img src="src/assets/images/project3.jpg" alt="Project" />
@@ -24,9 +25,9 @@ const Works = () => {
                                                     <p>mOBILE DESIGNING</p>
                                                     <h1>Seven Studio</h1>
                                                 </div>
-                                                <a href="work-details.html" className="project-btn">
+                                                <Link to="/work-details" className="project-btn">
                                                     <img src="src/assets/images/icon.svg" alt="Button" />
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

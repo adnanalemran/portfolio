@@ -1,9 +1,9 @@
 import ProfileCard from "../Components/ProfileCard";
 
 const About = () => {
-    return (
-        <div>
-              <section className="about-area">
+  return (
+    <div>
+      <section className="about-area">
         <div className="container">
           <div className="d-flex about-me-wrap align-items-start gap-24">
             <div data-aos="zoom-in">
@@ -24,10 +24,7 @@ const About = () => {
                 <img src="src/assets/images/icon2.png" alt="Star" />
                 <h1>Adnan Al-Emran</h1>
                 <p>
-                  I am a San francisco-based product designer with a focus on
-                  web design, illustration, a visual development. I have a
-                  diverse range of experience having worked across various
-                  fields and industries.
+                Passionate about Computer Science Engineering, aiming to excel as a Full Stack/MERN Stack Developer, eager to contribute to dynamic teams and deliver impactful tech solutions.
                 </p>
               </div>
             </div>
@@ -60,14 +57,14 @@ const About = () => {
 
                 <ul>
                   <li>
-                    <p className="date">2004 - 2007</p>
-                    <h2>Bachelor Degree in Psychology</h2>
-                    <p className="type">University of California</p>
+                    <p className="date">2021 - 2025</p>
+                    <h2>Bachelor of Science in Computer Science and Engineering</h2>
+                    <p className="type">Green University of Bangladesh</p>
                   </li>
                   <li>
-                    <p className="date">2007 - 2009</p>
-                    <h2>Master Degree in Designing</h2>
-                    <p className="type">University of Texas</p>
+                    <p className="date">2017 - 2021</p>
+                    <h2>Diploma in Engineering (Computer)</h2>
+                    <p className="type">Mymensingh Polytechnic Institute,</p>
                   </li>
                 </ul>
               </div>
@@ -78,7 +75,7 @@ const About = () => {
             <div className="col-md-12">
               <div className="d-flex profile-contact-credentials-wrap gap-24">
 
-               <ProfileCard/>
+                <ProfileCard />
 
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-contact-box info-box shadow-box">
@@ -121,8 +118,8 @@ const About = () => {
         </div>
       </section>
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default About;

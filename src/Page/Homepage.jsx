@@ -56,8 +56,8 @@ const Homepage = () => {
 
 
 
-                <Skill/>
-             
+                  <Skill />
+
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Homepage = () => {
 
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-services-box info-box shadow-box h-full">
-                    <a className="overlay-link" href="works.html"></a>
+                    <Link className="overlay-link" to="/works"></Link>
                     <img
                       src="src/assets/images/bg1.png"
                       alt="BG"
@@ -105,9 +105,9 @@ const Homepage = () => {
                         <h1>Projects</h1>
                       </div>
 
-                      <a href="#" className="about-btn">
+                      <Link to="/works" className="about-btn">
                         <img src="src/assets/images/icon.svg" alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

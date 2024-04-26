@@ -4,6 +4,8 @@ import Homepage from "../Page/Homepage";
 import NotFoundPage from "../Page/NotFoundPage";
 import About from "../Page/About";
 import Works from "../Page/Works";
+import Contact from "../Page/Contact";
+import WorkDetails from "../Page/WorkDetails";
 
 
 
@@ -23,7 +25,15 @@ const router = createBrowserRouter([
             },
             {
                 path: "/works",
-                element:<Works/>,
+                element: <Works />,
+            },
+            {
+                path: "/contact",
+                element: <Contact />,
+            },
+             {
+                path: "/work-details",
+                element: <WorkDetails/>
             },
 
         ],
