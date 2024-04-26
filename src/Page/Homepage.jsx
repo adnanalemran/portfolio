@@ -14,7 +14,7 @@ const Homepage = () => {
                   <img src="src/assets/images/me.png" alt="About Me" />
                 </div>
                 <div className="infos">
-                  <h4>A WEB DESIGNER</h4>
+                  <h4>Full-stack Developer (MERN)</h4>
                   <h1>Adnan Al-Emran.</h1>
                   <p>I am a Web Designer based in san francisco.</p>
                   <a href="#" className="about-btn">
