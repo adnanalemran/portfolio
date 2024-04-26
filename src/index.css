@@ -1,0 +1,17 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffffb9;
+    border-radius: 10px;
+  }
+  
+  .menu{
+    color: wheat;
+  }
