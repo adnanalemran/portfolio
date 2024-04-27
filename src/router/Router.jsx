@@ -6,6 +6,7 @@ import About from "../Page/About";
 import Works from "../Page/Works";
 import Contact from "../Page/Contact";
 import WorkDetails from "../Page/WorkDetails";
+import AddWork from "../Page/AddWork";
 
 
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
              {
                 path: "/work-details",
                 element: <WorkDetails/>
+            },
+            {
+                path: "/addProject",
+                element: <AddWork/>
             },
 
         ],

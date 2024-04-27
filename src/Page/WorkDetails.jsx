@@ -14,7 +14,7 @@ const WorkDetails = () => {
                 </div>
             </section>
             <section className="project-details-wrap">
-              
+
 
                 <div className="container">
                     <div data-aos="zoom-in">
@@ -39,9 +39,9 @@ const WorkDetails = () => {
                         <img src="src/assets/images/project-dt-1.jpg" alt="Project" />
                     </div>
 
-                
 
-                
+
+
 
                     <div data-aos="zoom-in">
                         <div className="project-about-2 d-flex shadow-box mb-24">
@@ -76,9 +76,9 @@ const WorkDetails = () => {
                     </div>
                 </div>
 
-            
 
-           
+
+
             </section>
         </div>
     );
