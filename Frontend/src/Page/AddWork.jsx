@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+import Swal from 'sweetalert2'
 
 const AddWork = () => {
-
- 
     const [formData, setFormData] = useState({
         subtitle: '',
         title: '',
@@ -17,7 +18,7 @@ const AddWork = () => {
         services: '',
         projectType: '',
         description: '',
-        imageOfProject: " "  // Initialize imageOfProject to null
+
     });
 
     const handleChange = (e) => {
@@ -30,10 +31,35 @@ const AddWork = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-     
- 
+        fetch("http://localhost:5000/project", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your work has been saved",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                console.log(data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: "error",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
     };
-
 
     return (
         <div>
@@ -85,16 +111,17 @@ const AddWork = () => {
                                         <input type="text" className="form-control" name="technology" value={formData.technology} onChange={handleChange} />
                                     </div>
                                 </div>
-                        
+
 
                             </div>
                         </div>
-                        <div data-aos="zoom-in">
-                            <div className="project-details-2-img mb-24 border" data-aos="zoom-in">
-                            <input type="text" className="form-control" name="image" value={formData.image} onChange={handleChange} />
+                        <div  >
+                            <div className="project-details-2-img mb-24 border "  >
+                                <input type="text" className="form-control  mt-3 " name="image" placeholder=" cover Image link " value={formData.image} onChange={handleChange} />
+                                <img src={formData?.image} alt="upload image link not valid" className="" />
                             </div>
                         </div>
-                        <div data-aos="zoom-in">
+                        <div  >
                             <div className="project-about-2 d-flex shadow-box mb-24">
                                 <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                                 <div className="left-details">
@@ -121,7 +148,7 @@ const AddWork = () => {
                                 <div className="right-details">
                                     <h3>Description </h3>
                                     <p>
-                                        <textarea name="description" rows="19" value={formData.description} onChange={handleChange}></textarea>
+                                        <textarea name="description" rows="19" cols="76" value={formData.description} onChange={handleChange}></textarea>
                                     </p>
                                 </div>
                             </div>

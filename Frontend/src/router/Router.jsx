@@ -37,7 +37,7 @@ const router = createBrowserRouter([
                 element: <WorkDetails />
             },
             {
-                path: "/add",
+                path: "/addWork",
                 element: <AddWork />
             },
 
