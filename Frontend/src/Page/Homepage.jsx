@@ -68,7 +68,7 @@ const Homepage = () => {
               <div className="blog-service-profile-wrap d-flex gap-24">
                 <div data-aos="zoom-in">
                   <div className="about-blog-box info-box shadow-box h-full">
-                    <a href="blog.html" className="overlay-link"></a>
+                    <a href="https://medium.com/@adnanalemranontor/" className="overlay-link"></a>
                     <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                     <img src="src/assets/images/gfonts.png" alt="GFonts" />
                     <div
@@ -76,10 +76,10 @@ const Homepage = () => {
                     >
                       <div className="infos">
                         <h4>Blog</h4>
-                        <h1>GFonts</h1>
+                        <h1>Medium</h1>
                       </div>
 
-                      <a href="blog.html" className="about-btn">
+                      <a href="https://medium.com/@adnanalemranontor/" className="about-btn">
                         <img src="src/assets/images/icon.svg" alt="Button" />
                       </a>
                     </div>
