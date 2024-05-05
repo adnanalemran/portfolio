@@ -60,16 +60,31 @@ app.get("/project/:id", async (req, res) => {
   console.log(result);
   res.send(result);
 });
+
+const { ObjectId } = require('mongodb');
+
 app.delete("/project/:id", async (req, res) => {
-  const id = req.params.id;
-  console.log("delete", id);
-  const query = {
-    _id: new ObjectId(id),
-  };
-  const result = await projectCollection.deleteOne(query);
-  console.log(result);
-  res.send(result);
+    const id = req.params.id;
+    console.log("delete", id); // ok 
+
+    const query = {
+        _id: new ObjectId(id),
+    };
+
+    try {
+        const result = await projectCollection.deleteOne(query);
+        console.log(result);
+        if (result.deletedCount === 1) {
+            res.status(200).json({ message: 'Project deleted successfully' });
+        } else {
+            res.status(404).json({ message: 'Project not found' });
+        }
+    } catch (error) {
+        console.error("Error deleting project:", error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
+
 
 app.listen(port, () => {
   console.log(`Simple Crud is Running on port ${port}`);

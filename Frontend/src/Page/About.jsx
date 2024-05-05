@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProfileCard from "../Components/ProfileCard";
 
 const About = () => {
@@ -38,13 +39,13 @@ const About = () => {
 
                 <ul>
                   <li>
-                    <p className="date">2007 - 2017</p>
+                    <p className="date">2020 - 2023</p>
                     <h2>Framer Designer & Developer</h2>
                     <p className="type">Bluebase Designs</p>
                   </li>
                   <li>
-                    <p className="date">2017 - 2023</p>
-                    <h2>Front-End Developer</h2>
+                    <p className="date">2023 - 2024</p>
+                    <h2>Full Stack/MERN Stack Developer.</h2>
                     <p className="type">Larsen & Toubro</p>
                   </li>
                 </ul>
@@ -79,7 +80,7 @@ const About = () => {
 
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-contact-box info-box shadow-box">
-                    <a className="overlay-link" href="contact.html"></a>
+                    {/* <Link className="overlay-link" to="contact"></Link> */}
                     <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                     <img
                       src="src/assets/images/icon2.png"
@@ -87,15 +88,15 @@ const About = () => {
                       className="star-icon"
                     />
                     <h1>Let's <br />work <span>together.</span></h1>
-                    <a href="contact.html" className="about-btn">
+                    <Link to="/contact" className="about-btn">
                       <img src="src/assets/images/icon.svg" alt="Button" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
                 <div data-aos="zoom-in" className="h-full">
                   <div className="about-crenditials-box info-box shadow-box">
-                    <a className="overlay-link" href="credentials.html"></a>
+       
                     <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                     <img src="src/assets/images/sign.png" alt="Sign" />
                     <div
@@ -106,7 +107,7 @@ const About = () => {
                         <h1>Credentials</h1>
                       </div>
 
-                      <a href="credentials.html" className="about-btn">
+                      <a   className="about-btn">
                         <img src="src/assets/images/icon.svg" alt="Button" />
                       </a>
                     </div>

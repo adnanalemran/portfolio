@@ -7,6 +7,7 @@ import Works from "../Page/Works";
 import Contact from "../Page/Contact";
 import WorkDetails from "../Page/WorkDetails";
 import AddWork from "../Page/AddWork";
+import View from "../Page/View";
 
 
 
@@ -37,8 +38,12 @@ const router = createBrowserRouter([
                 element: <WorkDetails />
             },
             {
-                path: "/addWork",
+                path: "/add",
                 element: <AddWork />
+            },
+            {
+                path: "/view",
+                element: <View />
             },
 
         ],

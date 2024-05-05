@@ -131,12 +131,12 @@ const Homepage = () => {
                   className="clients d-flex align-items-start gap-24 justify-content-center"
                 >
                   <div className="client-item">
-                    <h1>07</h1>
+                    <h1>03</h1>
                     <p>Years <br />Experience</p>
                   </div>
 
                   <div className="client-item">
-                    <h1>+125</h1>
+                    <h1>+50</h1>
                     <p>CLIENTS <br />WORLDWIDE</p>
                   </div>
 
@@ -149,7 +149,7 @@ const Homepage = () => {
             </div>
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-contact-box info-box shadow-box">
-                <a className="overlay-link" href="contact.html"></a>
+                <Link className="overlay-link" to="contact"></Link>
                 <img src="src/assets/images/bg1.png" alt="BG" className="bg-img" />
                 <img
                   src="src/assets/images/icon2.png"
